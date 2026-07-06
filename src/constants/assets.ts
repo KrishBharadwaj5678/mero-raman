@@ -1,0 +1,24 @@
+export const assets = {
+  heroTemple:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/hero/hero-temple.png",
+  heroVideo:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/hero/RadhaRaman.mp4",
+  gallery1:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/gallery/gallery-1.png",
+  gallery2:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/gallery/gallery-2.png",
+  gallery3:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/gallery/gallery-3.png",
+  gallery4:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/gallery/gallery-4.png",
+  gallery5:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/gallery/gallery-6.png",
+  gallery6:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/gallery/gallery-5.png",
+  brajArchitecture:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/articles/braj-architecture.png",
+  incenseSanctum:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/articles/incense-sanctum.png",
+  sacredFlowers:
+    "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/RadhaRaman/articles/sacred-flowers.png",
+};
