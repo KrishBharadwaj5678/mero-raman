@@ -4,9 +4,12 @@ import { SiteHeader } from "../components/site-header";
 import { useI18n } from "../lib/i18n";
 import { ImageWithSkeleton } from "../components/image-with-skeleton";
 import { FaArrowLeft } from "react-icons/fa";
+<<<<<<< HEAD
 import { Share2 } from "lucide-react";
 import { useState } from "react";
 import { shareLink } from "../lib/share";
+=======
+>>>>>>> origin/main
 
 type ArticleContent = {
   title: string;
@@ -128,11 +131,15 @@ function ArticleError({ error, reset }: { error: Error; reset: () => void }) {
 function ArticlePage() {
   const { slug } = Route.useParams();
   const { t } = useI18n();
+<<<<<<< HEAD
   const [shareStatus, setShareStatus] = useState("");
+=======
+>>>>>>> origin/main
   const article = articles[slug];
   if (!article) return <ArticleNotFound />;
   const content = article.en;
 
+<<<<<<< HEAD
   const shareArticle = async () => {
     try {
       const result = await shareLink({
@@ -147,6 +154,8 @@ function ArticlePage() {
     }
   };
 
+=======
+>>>>>>> origin/main
   return (
     <div className="bg-temple-cream text-temple-stone min-h-screen">
       {/* Hero cover */}
@@ -154,8 +163,11 @@ function ArticlePage() {
         <ImageWithSkeleton
           src={article.image}
           alt={article.imageAlt}
+<<<<<<< HEAD
           loading="eager"
           fetchPriority="high"
+=======
+>>>>>>> origin/main
           wrapperClassName="absolute inset-0 w-full h-full"
           className="absolute inset-0 w-full h-full object-cover animate-slow-zoom"
         />
@@ -169,6 +181,7 @@ function ArticlePage() {
 
       {/* Body */}
       <article className="max-w-3xl mx-auto px-6 md:px-10 py-20 md:py-28">
+<<<<<<< HEAD
         <div className="mb-12 flex items-center justify-between">
           <Link
             to="/"
@@ -193,6 +206,17 @@ function ArticlePage() {
             {shareStatus}
           </p>
         </div>
+=======
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-[11.4px] uppercase tracking-[0.12em] text-temple-gold mb-12 hover:text-temple-saffron transition-colors"
+        >
+          <span>
+            <FaArrowLeft className="text-temple-gold/70" />
+          </span>
+          {t("art.back")}
+        </Link>
+>>>>>>> origin/main
 
         <p className="font-display text-2xl md:text-3xl italic leading-snug text-temple-stone/85 mb-14">
           {content.lede}

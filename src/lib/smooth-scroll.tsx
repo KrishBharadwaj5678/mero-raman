@@ -38,6 +38,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
   const scrollToId = (id: string) => {
     if (typeof window === "undefined") return;
     if (id === "top" || id === "hero") {
+<<<<<<< HEAD
       if (lenisRef.current) {
         lenisRef.current.scrollTo(0, { offset: 0 });
       } else {
@@ -54,6 +55,13 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       const top = el.getBoundingClientRect().top + window.scrollY - 72;
       window.scrollTo({ top, behavior: "smooth" });
     }
+=======
+      lenisRef.current?.scrollTo(0, { offset: 0 });
+      return;
+    }
+    const el = document.getElementById(id);
+    if (el) lenisRef.current?.scrollTo(el, { offset: -72 });
+>>>>>>> origin/main
   };
 
   return (
