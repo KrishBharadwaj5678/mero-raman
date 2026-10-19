@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meroraman.vercel.app/sitemap.xml
