@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-=======
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
->>>>>>> origin/main
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
 }
