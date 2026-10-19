@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-<<<<<<< HEAD
 import { useEffect, useRef, useState } from "react";
 import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
@@ -7,13 +6,6 @@ import { SiteHeader } from "../components/site-header";
 import { useI18n } from "../lib/i18n";
 import { useSmoothScroll } from "../lib/smooth-scroll";
 import { useIntroLoader } from "../lib/intro-loader";
-=======
-import { useState } from "react";
-import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
-import { SiteHeader } from "../components/site-header";
-import { useI18n } from "../lib/i18n";
-import { useSmoothScroll } from "../lib/smooth-scroll";
->>>>>>> origin/main
 import { ImageWithSkeleton } from "../components/image-with-skeleton";
 import TextLoader from "../components/ui/text-loader";
 import { assets } from "../constants/assets";
@@ -105,7 +97,6 @@ const articles = [
   },
 ] as const;
 
-<<<<<<< HEAD
 const galleryImages = [
   {
     src: assets.gallery1,
@@ -139,8 +130,6 @@ const galleryImages = [
   },
 ] as const;
 
-=======
->>>>>>> origin/main
 function Ornament({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 120 12" className={className} aria-hidden>
@@ -166,7 +155,6 @@ function Ornament({ className = "" }: { className?: string }) {
 function Index() {
   const { t } = useI18n();
   const { scrollToId } = useSmoothScroll();
-<<<<<<< HEAD
   const { isComplete: loaderComplete, complete: completeLoader } =
     useIntroLoader();
   const [selectedGalleryIndex, setSelectedGalleryIndex] = useState<
@@ -261,18 +249,11 @@ function Index() {
         : (index - 1 + galleryImages.length) % galleryImages.length;
     });
   };
-=======
-  const [loaderComplete, setLoaderComplete] = useState(false);
->>>>>>> origin/main
 
   return (
     <div className="bg-temple-cream text-temple-stone">
       {!loaderComplete ? (
-<<<<<<< HEAD
         <TextLoader onComplete={completeLoader} />
-=======
-        <TextLoader onComplete={() => setLoaderComplete(true)} />
->>>>>>> origin/main
       ) : (
         <>
           <SiteHeader variant="transparent" />
@@ -282,7 +263,6 @@ function Index() {
             id="home"
             className="relative min-h-svh overflow-hidden -mt-18.25 pt-18.25 bg-temple-stone text-temple-cream"
           >
-<<<<<<< HEAD
             {/* Default temple background image */}
             <div className="absolute inset-0">
               <img
@@ -293,21 +273,6 @@ function Index() {
                 decoding="async"
                 className="w-full h-full object-cover"
               />
-=======
-            {/* Background video */}
-            <div className="absolute inset-0">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                poster={assets.heroTemple}
-                className="w-full h-full object-cover"
-              >
-                <source src={assets.heroVideo} type="video/mp4" />
-              </video>
->>>>>>> origin/main
 
               {/* Single, deliberate gradient — no flame orbs, no shimmer */}
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,15,12,0.55)_0%,rgba(20,15,12,0.35)_40%,rgba(20,15,12,0.85)_100%)]" />
@@ -341,20 +306,12 @@ function Index() {
                     onClick={(e) => {
                       e.preventDefault();
                       scrollToId("seva");
-<<<<<<< HEAD
                       history.replaceState(null, "", "/#seva");
                     }}
                     className="inline-flex cursor-pointer items-center justify-center gap-3 rounded-sm border border-temple-saffron bg-temple-saffron px-8 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-temple-stone shadow-md shadow-black/20 transition-[background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-px hover:border-temple-cream hover:bg-temple-cream hover:shadow-lg hover:shadow-black/25 active:translate-y-0 active:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-temple-saffron"
                   >
                     {t("hero.cta.primary")}
                     <ArrowRight aria-hidden="true" className="h-4 w-4" />
-=======
-                    }}
-                  >
-                    <button className="cursor-pointer px-8 py-4 rounded-xs bg-[#EC952B] text-white font-bold transition duration-200 hover:bg-gray-200 hover:text-black border-2 border-transparent hover:border-[#EC952B] tracking-[0.16em] uppercase text-[12.3px]">
-                      {t("hero.cta.primary")}
-                    </button>
->>>>>>> origin/main
                   </a>
                 </div>
               </div>
@@ -380,7 +337,6 @@ function Index() {
 
               {/* scroll cue */}
               <button
-<<<<<<< HEAD
                 ref={initialGalleryControlRef}
                 type="button"
                 onClick={() => scrollToId("history")}
@@ -393,17 +349,6 @@ function Index() {
                 >
                   <span className="h-1.5 w-1 rounded-full bg-current animate-scroll-indicator" />
                 </span>
-=======
-                type="button"
-                onClick={() => scrollToId("history")}
-                className="absolute right-6 md:right-0 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-3 text-temple-cream/50 hover:text-gray-300 transition-colors"
-                aria-label="Scroll to next section"
-              >
-                <span className="text-[9px] uppercase tracking-[0.3em] [writing-mode:vertical-rl]">
-                  {t("hero.scroll")}
-                </span>
-                <div className="w-px h-10 bg-linear-to-b from-temple-cream/50 to-transparent" />
->>>>>>> origin/main
               </button>
             </div>
           </header>
@@ -506,7 +451,6 @@ function Index() {
             </div>
           </section>
 
-<<<<<<< HEAD
           <section
             aria-label="Shri Radha Ramano Vijayate"
             className="relative overflow-hidden bg-[#FAF4E6] py-5 text-temple-stone md:py-5"
@@ -543,8 +487,6 @@ function Index() {
             </div>
           </section>
 
-=======
->>>>>>> origin/main
           {/* DARSHAN */}
           <section
             id="seva"
@@ -615,52 +557,19 @@ function Index() {
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-6 auto-rows-30 md:auto-rows-37.5 gap-3 md:gap-5">
-<<<<<<< HEAD
                 {galleryImages.map((g, i) => (
-=======
-                {[
-                  {
-                    src: assets.gallery1,
-                    span: "col-span-2 row-span-3",
-                  },
-                  {
-                    src: assets.gallery2,
-                    span: "col-span-2 md:col-span-2 row-span-2",
-                  },
-                  {
-                    src: assets.gallery3,
-                    span: "col-span-2 md:col-span-2 row-span-2",
-                  },
-                  {
-                    src: assets.gallery6,
-                    span: "col-span-2 md:col-span-4 row-span-2",
-                  },
-                  {
-                    src: assets.gallery4,
-                    span: "col-span-2 md:col-span-2 row-span-3",
-                  },
-                  {
-                    src: assets.gallery5,
-                    span: "col-span-2 md:col-span-4 row-span-2",
-                  },
-                ].map((g, i) => (
->>>>>>> origin/main
                   <figure
                     key={i}
                     className={`group relative overflow-hidden ring-1 ring-temple-cream/10 ${g.span}`}
                   >
                     <ImageWithSkeleton
                       src={g.src}
-<<<<<<< HEAD
                       alt={g.caption}
-=======
->>>>>>> origin/main
                       loading="lazy"
                       wrapperClassName="w-full h-full"
                       className="w-full h-full object-cover transition-transform duration-1600 ease-out group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-temple-stone via-temple-stone/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-700" />
-<<<<<<< HEAD
                     <button
                       type="button"
                       onClick={(event) => {
@@ -670,16 +579,12 @@ function Index() {
                       aria-label={`Open photo: ${g.caption}`}
                       className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-temple-saffron"
                     />
-=======
-                    <figcaption className="absolute left-4 bottom-3 right-4 text-[10px] uppercase tracking-[0.3em] text-temple-cream/85 translate-y-1 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"></figcaption>
->>>>>>> origin/main
                   </figure>
                 ))}
               </div>
             </div>
           </section>
 
-<<<<<<< HEAD
           {selectedGalleryIndex !== null && (
             <div
               className="fixed inset-0 z-[100] flex items-center justify-center bg-temple-stone/95 p-4 md:p-10 animate-lightbox-in"
@@ -739,8 +644,6 @@ function Index() {
             </div>
           )}
 
-=======
->>>>>>> origin/main
           {/* VISIT + MAP */}
           <section
             id="contact"
@@ -748,11 +651,7 @@ function Index() {
           >
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
               <div className="lg:col-span-5 flex flex-col">
-<<<<<<< HEAD
                 <span className="text-temple-gold text-xs uppercase tracking-[0.23em] mb-4 block">
-=======
-                <span className="text-temple-gold text-xs uppercase tracking-[0.24em] mb-4 block">
->>>>>>> origin/main
                   {t("visit.eyebrow")}
                 </span>
                 <h2 className="font-display text-4xl md:text-5xl leading-[1.05] mb-8 text-balance">
@@ -822,14 +721,11 @@ function Index() {
                     <Link
                       to="/"
                       hash="history"
-<<<<<<< HEAD
                       onClick={(event) => {
                         event.preventDefault();
                         scrollToId("history");
                         history.replaceState(null, "", "/#history");
                       }}
-=======
->>>>>>> origin/main
                       className="hover:text-temple-cream transition-colors"
                     >
                       {t("footer.about")}
@@ -891,14 +787,9 @@ function Index() {
                     href="https://www.instagram.com/shriradharamanju/"
                     target="_blank"
                     rel="noreferrer"
-<<<<<<< HEAD
                     aria-label="Instagram"
                     data-tooltip="Instagram"
                     className="has-tooltip inline-flex h-10 w-10 items-center justify-center rounded-full border border-temple-cream/20 bg-temple-cream/10 text-temple-cream transition-all duration-400 hover:bg-temple-cream hover:text-temple-stone"
-=======
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-temple-cream/20 bg-temple-cream/10 text-temple-cream transition-all duration-400 hover:bg-temple-cream hover:text-temple-stone"
-                    aria-label="Instagram"
->>>>>>> origin/main
                   >
                     <FaInstagram className="h-5 w-5" />
                   </a>
@@ -906,14 +797,9 @@ function Index() {
                     href="https://www.youtube.com/@chandanjiofficial"
                     target="_blank"
                     rel="noreferrer"
-<<<<<<< HEAD
                     aria-label="YouTube"
                     data-tooltip="YouTube"
                     className="has-tooltip inline-flex h-10 w-10 items-center justify-center rounded-full border border-temple-cream/20 bg-temple-cream/10 text-temple-cream transition-all duration-400 hover:bg-temple-cream hover:text-temple-stone"
-=======
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-temple-cream/20 bg-temple-cream/10 text-temple-cream transition-all duration-400 hover:bg-temple-cream hover:text-temple-stone"
-                    aria-label="YouTube"
->>>>>>> origin/main
                   >
                     <FaYoutube className="h-5 w-5" />
                   </a>
@@ -921,14 +807,9 @@ function Index() {
                     href="https://wa.me/+918368783201"
                     target="_blank"
                     rel="noreferrer"
-<<<<<<< HEAD
                     aria-label="WhatsApp"
                     data-tooltip="WhatsApp"
                     className="has-tooltip inline-flex h-10 w-10 items-center justify-center rounded-full border border-temple-cream/20 bg-temple-cream/10 text-temple-cream transition-all duration-400 hover:bg-temple-cream hover:text-temple-stone"
-=======
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-temple-cream/20 bg-temple-cream/10 text-temple-cream transition-all duration-400 hover:bg-temple-cream hover:text-temple-stone"
-                    aria-label="WhatsApp"
->>>>>>> origin/main
                   >
                     <FaWhatsapp className="h-5 w-5" />
                   </a>

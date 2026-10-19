@@ -28,11 +28,8 @@ export function ImageWithSkeleton({
       )}
       <img
         {...rest}
-<<<<<<< HEAD
         loading={rest.loading ?? "lazy"}
         decoding={rest.decoding ?? "async"}
-=======
->>>>>>> origin/main
         onLoad={(e) => {
           setLoaded(true);
           onLoad?.(e);

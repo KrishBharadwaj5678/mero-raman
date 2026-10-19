@@ -5,7 +5,6 @@
   cursor: none !important;
 }
 
-<<<<<<< HEAD
 #gallery-lightbox,
 #gallery-lightbox * {
   cursor: auto !important;
@@ -61,8 +60,6 @@
   bottom: calc(100% + 0.5rem);
 }
 
-=======
->>>>>>> origin/main
 /* Hide scrollbars globally  */
 /* Firefox */
 html,
@@ -203,7 +200,6 @@ body {
   }
 }
 
-<<<<<<< HEAD
 @keyframes lightbox-in {
   from {
     opacity: 0;
@@ -235,8 +231,6 @@ body {
   }
 }
 
-=======
->>>>>>> origin/main
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -268,7 +262,6 @@ body {
   animation: slow-zoom 18s ease-in-out infinite alternate;
 }
 
-<<<<<<< HEAD
 @utility animate-lightbox-in {
   animation: lightbox-in 220ms ease-out both;
 }
@@ -291,13 +284,10 @@ body {
   );
 }
 
-=======
->>>>>>> origin/main
 @utility animate-float-soft {
   animation: float-soft 6s ease-in-out infinite;
 }
 
-<<<<<<< HEAD
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -313,8 +303,6 @@ body {
   }
 }
 
-=======
->>>>>>> origin/main
 @utility text-shadow-premium {
   text-shadow:
     0 2px 30px rgba(0, 0, 0, 0.45),

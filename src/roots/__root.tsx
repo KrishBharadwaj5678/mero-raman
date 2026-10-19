@@ -4,10 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-<<<<<<< HEAD
   useRouterState,
-=======
->>>>>>> origin/main
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -16,10 +13,7 @@ import { type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { LanguageProvider } from "../lib/i18n";
 import { SmoothScrollProvider } from "../lib/smooth-scroll";
-<<<<<<< HEAD
 import { IntroLoaderProvider } from "../lib/intro-loader";
-=======
->>>>>>> origin/main
 import { SmoothCursor } from "../components/ui/smooth-cursor";
 
 function NotFoundComponent() {
@@ -156,17 +150,13 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-<<<<<<< HEAD
   const pathname = useRouterState({
     select: (state) => state.location.pathname,
   });
-=======
->>>>>>> origin/main
 
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
-<<<<<<< HEAD
         <IntroLoaderProvider initialComplete={pathname !== "/"}>
           <SmoothScrollProvider>
             <SmoothCursor />
@@ -174,13 +164,6 @@ function RootComponent() {
             <Outlet />
           </SmoothScrollProvider>
         </IntroLoaderProvider>
-=======
-        <SmoothScrollProvider>
-          <SmoothCursor />
-          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-          <Outlet />
-        </SmoothScrollProvider>
->>>>>>> origin/main
       </LanguageProvider>
     </QueryClientProvider>
   );

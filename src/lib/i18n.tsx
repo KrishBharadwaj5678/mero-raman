@@ -26,11 +26,6 @@ const en: Dict = {
   "hero.stat2.label": "Daily aartis",
   "hero.stat3.value": "1542",
   "hero.stat3.label": "Manifested in",
-<<<<<<< HEAD
-=======
-  "hero.scroll": "Scroll to explore",
-
->>>>>>> origin/main
   "phil.eyebrow": "An Eternal Tradition",
   "phil.quote":
     "In the heart of the sacred groves, the fire lit by Gopala Bhatta Goswami five centuries ago still burns, preparing the bhoga for the Lord in an unbroken tradition of devotion.",
@@ -48,11 +43,7 @@ const en: Dict = {
   "art.kitchen.summary":
     "Renowned for its unparalleled culinary tradition, where the sacred fire has been kept alive without interruption for over 480 years.",
   "art.readMore": "Read the full article",
-<<<<<<< HEAD
   "art.back": "Back",
-=======
-  "art.back": "Back to temple",
->>>>>>> origin/main
 
   "darshan.eyebrow": "Darshan Timings",
   "darshan.heading.1": "Daily Sevas at",
@@ -79,11 +70,7 @@ const en: Dict = {
   "gallery.body":
     "A visual archive of Shri Radha Raman Ji showcasing sacred moments and timeless devotion.",
 
-<<<<<<< HEAD
   "visit.eyebrow": "Visit the Temple",
-=======
-  "visit.eyebrow": "Find the Temple",
->>>>>>> origin/main
   "visit.heading": "Where the lanes of Vrindavan bend toward the divine.",
   "visit.address.line1": "Shri Radha Raman Temple, Nidhivan Road",
   "visit.address.line2": "Vrindavan, Uttar Pradesh 281121, India",
