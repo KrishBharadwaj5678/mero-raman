@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=KrishBharadwaj5678&label=Просмотры%20профиля&color=brightgreen&style=for-the-badge" />
-  <img src="https://hits.sh/github.com/KrishBharadwaj5678/mero-raman.svg?style=for-the-badge&label=Просмотры%20репозитория&color=blue" />
+  <img src="https://komarev.com/ghpvc/?username=KrishBharadwaj5678&label=Profile%20Views&color=brightgreen&style=for-the-badge" />
+  <img src="https://hits.sh/github.com/KrishBharadwaj5678/mero-raman.svg?style=for-the-badge&label=Repo%20Views&color=blue" />
   <img src="https://img.shields.io/github/stars/KrishBharadwaj5678/mero-raman?style=for-the-badge&color=yellow" />
   <img src="https://img.shields.io/github/last-commit/KrishBharadwaj5678/mero-raman?style=for-the-badge&color=orange" />
   <img src="https://img.shields.io/github/repo-size/KrishBharadwaj5678/mero-raman?style=for-the-badge&color=blue" />
